@@ -16,4 +16,8 @@ public class PersonExtExt extends PersonExt {
     }
 
 
+    public void rty() {
+        System.out.println("jkhsad");
+    }
+
 }

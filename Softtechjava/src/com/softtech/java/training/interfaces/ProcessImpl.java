@@ -1,5 +1,6 @@
 package com.softtech.java.training.interfaces;
 
+import com.softtech.java.training.pattern.factory.IProcess;
 
 public class ProcessImpl implements IProcess {
 

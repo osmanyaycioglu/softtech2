@@ -1,4 +1,4 @@
-package com.softtech.java.training.interfaces;
+package com.softtech.java.training.pattern.factory;
 
 
 public interface IProcess {
@@ -22,5 +22,14 @@ public interface IProcess {
         String startLoc = this.start(102);
         return this.stop(startLoc);
     }
+
+    public default void executeProcess() {
+        String startLoc = this.start(100);
+        System.out.println(startLoc);
+        String stopLoc = this.stop("xyz");
+        System.out.println(stopLoc);
+
+    }
+
 
 }

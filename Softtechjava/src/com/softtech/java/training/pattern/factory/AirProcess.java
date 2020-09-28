@@ -1,5 +1,4 @@
-package com.softtech.java.training.interfaces;
-
+package com.softtech.java.training.pattern.factory;
 
 public class AirProcess implements IProcess {
 
