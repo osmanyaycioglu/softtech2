@@ -1,6 +1,6 @@
 package com.softtech.java.training;
 
-public class Person {
+public class Person implements Comparable<Person> {
 
     private String name;
     private String surname;
@@ -117,6 +117,11 @@ public class Person {
 
     public int getAge() {
         return this.age;
+    }
+
+    @Override
+    public int compareTo(final Person oParam) {
+        return this.name.compareTo(oParam.getName());
     }
 
 

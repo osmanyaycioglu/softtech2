@@ -1,6 +1,14 @@
 package com.softtech.java.training.lambda;
 
 import java.math.BigDecimal;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+import com.softtech.java.training.Person;
 
 public class LambdaRun {
 
@@ -66,6 +74,28 @@ public class LambdaRun {
         IMethod mInft = s -> System.out.println(s);
 
         IMethod mInft2 = System.out::println;
+
+        Function<String, Integer> func1 = o -> Integer.parseInt(o);
+        Function<String, Long> func2 = o -> Long.parseLong(o);
+        Function<Person, String> func3 = o -> o.getName() + " " + o.getSurname();
+
+        BiFunction<String, String, Integer> bifunc1 = (l,
+                                                       k) -> Integer.parseInt(l) + Integer.parseInt(k);
+        Integer applyLoc = bifunc1.apply("100",
+                                         "200");
+        System.out.println("Sonuç : " + applyLoc);
+
+        Consumer<String> strConsumer = q -> System.out.println(q);
+        BiConsumer<String, Integer> strIntBiConsumerLoc = (u,
+                                                           y) -> System.out.println(u + y);
+        strIntBiConsumerLoc.accept("Test ",
+                                   500);
+        Supplier<String> strSupplierLoc = () -> "Hello World";
+        System.out.println(strSupplierLoc.get());
+
+        Predicate<String> strPredicateLoc = k1 -> k1.startsWith("osman");
+
+        System.out.println(strPredicateLoc.test("osman yaycıoğlu"));
 
     }
 
