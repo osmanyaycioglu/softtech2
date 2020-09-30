@@ -1,0 +1,3 @@
+osman,yaycioglu,osmanyay,123456,true,TL#100;DOLAR#1000
+ali,veli,aliv,123456,true,TL#200;DOLAR#2000
+ayse,are,ayseare,123456,false,TL#200;DOLAR#2000

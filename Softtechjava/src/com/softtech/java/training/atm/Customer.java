@@ -13,6 +13,27 @@ public class Customer {
     private List<Account> accountList;
     private boolean       active;
 
+
+    public Customer() {
+    }
+
+
+    public Customer(final String nameParam,
+                    final String surnameParam,
+                    final String usernameParam,
+                    final String passwordParam,
+                    final List<Account> accountListParam,
+                    final boolean activeParam) {
+        super();
+        this.name = nameParam;
+        this.surname = surnameParam;
+        this.username = usernameParam;
+        this.password = passwordParam;
+        this.accountList = accountListParam;
+        this.active = activeParam;
+    }
+
+
     public String getName() {
         return this.name;
     }
