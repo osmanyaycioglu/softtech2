@@ -1,6 +1,7 @@
 package com.softtech.java.training.collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ListPlayground {
@@ -50,5 +51,14 @@ public class ListPlayground {
         for (String stringLoc : strListLoc) {
 
         }
+        Collections.sort(strListLoc);
+        Collections.sort(strListLoc,
+                         (a,
+                          b) -> a.compareTo(b));
+
+        List<String> synchronizedListLoc = Collections.synchronizedList(strListLoc);
+        List<String> unmodifiableListLoc = Collections.unmodifiableList(strListLoc);
+        unmodifiableListLoc.add("adas");
+
     }
 }

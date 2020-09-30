@@ -41,6 +41,23 @@ public class Employee {
         return new EmployeeBuilder();
     }
 
+
+    @Override
+    public String toString() {
+        return "Employee [name="
+               + this.name
+               + ", surname="
+               + this.surname
+               + ", email="
+               + this.email
+               + ", department="
+               + this.department
+               + ", age="
+               + this.age
+               + "]";
+    }
+
+
     public static class EmployeeBuilder {
 
         private final Employee employee = new Employee();
