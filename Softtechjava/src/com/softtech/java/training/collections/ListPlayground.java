@@ -13,6 +13,7 @@ public class ListPlayground {
         for (int iLoc = 0; iLoc < 1_000_000; iLoc++) {
             strListLoc2.add("test" + iLoc);
         }
+        strListLoc2.forEach(v -> System.out.println(v));
 
         System.gc();
 
