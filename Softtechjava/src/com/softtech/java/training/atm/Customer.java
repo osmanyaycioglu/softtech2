@@ -11,6 +11,7 @@ public class Customer {
     private String        username;
     private String        password;
     private List<Account> accountList;
+    private boolean       active;
 
     public String getName() {
         return this.name;
@@ -57,6 +58,14 @@ public class Customer {
             this.accountList = new ArrayList<>();
         }
         this.accountList.add(accountParam);
+    }
+
+    public boolean isActive() {
+        return this.active;
+    }
+
+    public void setActive(final boolean activeParam) {
+        this.active = activeParam;
     }
 
 }
