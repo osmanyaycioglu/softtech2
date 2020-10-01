@@ -23,6 +23,8 @@ public class ATMRun {
                 for (Account accountLoc : accountListLoc) {
                     System.out.println(accountLoc);
                 }
+            } else {
+                System.out.println("Böyle bir user yok");
             }
 
         } catch (Exception eLoc) {
