@@ -27,6 +27,7 @@ public class PropertyEngine {
                         if (typeLoc == String.class) {
                             fieldLoc.set(obj,
                                          valueLoc);
+                            String objectLoc = (String) fieldLoc.get(obj);
                         } else if ("int".equals(typeLoc.getName())) {
                             fieldLoc.setInt(obj,
                                             Integer.parseInt(valueLoc));
