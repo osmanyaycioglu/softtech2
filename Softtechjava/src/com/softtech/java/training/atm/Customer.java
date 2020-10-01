@@ -97,4 +97,23 @@ public class Customer {
         this.active = activeParam;
     }
 
+
+    @Override
+    public String toString() {
+        return "Customer [name="
+               + this.name
+               + ", surname="
+               + this.surname
+               + ", username="
+               + this.username
+               + ", password="
+               + this.password
+               + ", accountList="
+               + this.accountList
+               + ", active="
+               + this.active
+               + "]";
+    }
+
+
 }
