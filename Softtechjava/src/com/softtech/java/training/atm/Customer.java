@@ -4,12 +4,20 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.softtech.java.training.annotations.validation.ValidateList;
+import com.softtech.java.training.annotations.validation.ValidateStr;
+
 public class Customer {
 
+    @ValidateStr(min = 2, max = 30)
     private String        name;
+    @ValidateStr(min = 2, max = 50)
     private String        surname;
+    @ValidateStr(min = 8, max = 20)
     private String        username;
+    @ValidateStr(min = 6, max = 15)
     private String        password;
+    @ValidateList(max = Integer.MAX_VALUE)
     private List<Account> accountList;
     private boolean       active;
 
