@@ -1,0 +1,1 @@
+wsimport.exe http://127.0.0.1/myws?wsdl -p com.training.wsclient -d e:/4 -keep
